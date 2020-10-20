@@ -1,5 +1,23 @@
-{% extends 'base.html'%}
-{% block content %}	{% block content %}
-<h1>Welcome to news bulettins</h1>	<h1>Welcome to news bulettins</h1>
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
 
-{% endblock %}
+    {% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    {% endblock %}
+
+    {% block content %}
+    <div class="container" id="indexwall">
+        <h3 class="text-center"> Business</h3>
+        <hr>
+        <ul>
+            {{ macro.displaySourcesList(business)}}
+        </ul>
+        <h3 class="text-center">Sports</h3>
+        <hr>
+        <ul>
+            {{ macro.displaySourcesList(sports)}}
+        </ul>
+    </div>    
+
+{% endblock %}    
