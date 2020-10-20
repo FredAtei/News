@@ -10,6 +10,9 @@ This application was developed using Python enable its users to get news that th
 ## Author
 Fred Atei
 
+## How to Use
+Select you prefered news site by pressing its name and view its available articles
+
 ### Development
 Want to contribute? Great!
 
