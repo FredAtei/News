@@ -8,7 +8,7 @@
   {% block content%}
   <div class="container">
   
-    <h3 class="text-center" style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">Top Story Headlines</h3>
+    <h3 class="text-center">Headlines</h3>
     <hr>
     {% for article_row in articles | batch(4)%}
   
@@ -36,4 +36,4 @@
     </div>
     {% endfor %}
   </div>  
-  {% endblock%}
+{% endblock%}
